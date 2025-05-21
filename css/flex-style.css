@@ -1,0 +1,166 @@
+/* Tirando todas as margins e paddins da página e definindo uma fonte serifada para o site inteiro */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    min-height: 100vh;    
+}
+
+.cabecalho{
+    background-color: #361416;
+    padding: 0 1%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+}
+
+.cabecalho__logo{
+    width: 100px;
+}
+
+/* Conseguir posicionar a lupa dentro */
+.cabecalho_pesquisa{
+    position: relative;
+}
+
+.pesquisa__input{
+    width: 260px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 5px; 
+    border: none;
+    transition: width 2s ease-in-out;
+}
+
+.pesquisa__input:focus{
+    width: 460px;
+    transform: scale(1.1);
+}
+
+.pesquisa__lupa{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.cabecalho__icons{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    cursor: pointer;
+}
+
+.nav{
+    height: 20%;
+    background-color: #361416;
+}
+
+.nav > ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav > ul > li{
+    margin: 1% 4%;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav > ul > li:hover{
+    border-bottom: 1px solid #fff;
+}
+
+.main{
+    display: flex;
+}
+
+.filtro{
+    margin: 5% 3%;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border-right: 1px solid #000;
+}
+
+.filtro > h2{
+   margin: 10% 0 ;
+}
+
+
+.filtro > label{
+    margin: 5% 0 ;
+    font-size: 16px;
+    color: #4e4e4e;
+}
+
+.vinho{
+    margin: 5% 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vinho__box{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 5%;
+}
+
+.box__img{
+    width: 200px;
+}
+
+.box__img:hover{
+   transform: rotateY(180deg);
+}
+
+.box__texto{
+    color:#4e4e4e ;
+    text-align: center;
+    margin: 2%;
+}
+
+.box__preco{
+    font-size: 24px;
+    color: #361416;
+    margin-bottom: 4%;
+}
+
+.box__promocao{
+    font-size: 10px;
+    color: #4e4e4e;
+}
+
+.box__btn{
+    margin: 10% 0 0 0;
+    background-color: #361416;
+    font-size:16px ;
+    color: #fff;
+    width: 100px;
+    border: none;
+    padding: 2%;
+    border-radius: 15px;
+}
+
+.box__btn:hover{
+    background-color: #422e30;
+    transform: scale(1.1);
+}
+
+.footer{
+    text-align: center;
+    background-color: #361416;
+    color: #fff;
+    padding: 1% 0;
+}
