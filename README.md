@@ -15,7 +15,7 @@ Este projeto é uma página web de uma loja de vinhos chamada Vinharia Agnello. 
 ```css
 checkpoint03-flexbox/
 │
-├── flex-layout.html
+├── index.html
 ├── README.md
 ├── css/
 │ └── flex-style.css
